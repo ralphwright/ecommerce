@@ -1,7 +1,8 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
+
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
+
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
@@ -68,6 +69,7 @@ const SignUpForm = () => {
           name="displayName"
           value={displayName}
         />
+
         <FormInput
           label="Email"
           type="email"
@@ -76,6 +78,7 @@ const SignUpForm = () => {
           name="email"
           value={email}
         />
+
         <FormInput
           label="Password"
           type="password"
@@ -84,6 +87,7 @@ const SignUpForm = () => {
           name="password"
           value={password}
         />
+
         <FormInput
           label="Confirm Password"
           type="password"
